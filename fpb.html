@@ -1,0 +1,25 @@
+
+
+<script>
+var httpRequest1 = new XMLHttpRequest()
+        httpRequest1.open('GET', 'https://javspyl.icu/api/fpb.php', true)
+        httpRequest1.send();
+httpRequest1.onreadystatechange = function () {
+var fpb1 = httpRequest1.responseText;
+document.getElementById('q').innerHTML= fpb1 +'<br /><br />';};
+</script>
+
+<script>
+var httpRequest = new XMLHttpRequest()
+        httpRequest.open('GET', 'https://www.javspyl.icu/api/fpb.php', true)
+        httpRequest.send();
+httpRequest.onreadystatechange = function () {
+var fpb = httpRequest.responseText;
+document.getElementById('w').innerHTML= fpb +'<br /><br />';};
+</script>
+
+<div id="q" ></div>
+
+
+
+<div id="w" ></div>
